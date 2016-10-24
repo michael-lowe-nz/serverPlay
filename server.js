@@ -1,18 +1,15 @@
 var express = require('express');
-var exphbs = require('express-handlebars');
+var exphbs  = require('express-handlebars');
 
 var app = express();
 
-/* MIDDLEWARE */
-app.engine('exphbs',exphbs({defaultLayout: 'main';})); // Let's set the app's engine to handlebars
+var data = require('./db/data');
+
+app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
-app.get('/', function(req, res){
-  res.send("Hello There!");
-});
-
-app.get('/michael', function(req, res){
-  res.render('home'); // This line is what starts to look different post handlebars install
+app.get('/', function (req, res) {
+    res.render('home',data);
 });
 
 app.listen(3000, function(){
