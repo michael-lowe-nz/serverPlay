@@ -1,0 +1,20 @@
+{
+  "name": "serverplay",
+  "version": "1.0.0",
+  "description": "Repository to play with making servers",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michael-lowe-nz/serverPlay.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michael-lowe-nz/serverPlay/issues"
+  },
+  "homepage": "https://github.com/michael-lowe-nz/serverPlay#readme"
+}
